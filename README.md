@@ -102,6 +102,9 @@ Now that our machine is updated software-wise and has SPI enabled , we can start
 
 For this step of the project, I will only display the commands needed to download the libraries and drivers and elaborate about those afterwards.
 
+#### Git
+`sudo apt install git` We very much need this.
+
 #### WM8960 Audio HAT
 
 - Fetching the driver
