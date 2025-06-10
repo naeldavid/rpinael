@@ -107,57 +107,57 @@ For this step of the project, I will only display the commands needed to downloa
 
 #### WM8960 Audio HAT
 
-- Fetching the driver
-`git clone https://github.com/waveshare/WM8960-Audio-HAT`
+Fetching the driver
+- `git clone https://github.com/waveshare/WM8960-Audio-HAT`
 
-- Installing the Driver
-`- cd WM8960-Audio-HAT` going to the directory
-`sudo ./install.sh `
-`sudo reboot`
+Installing the Driver
+- `cd WM8960-Audio-HAT` going to the directory
+- `sudo ./install.sh `
+- `sudo reboot`
 
 To check if the driver is installed we simply input this command `sudo dkms status` and the output should look like so :
 img here
 
-- Installing a Media Player
-`sudo apt-get install mpg123`
-`sudo mpg123 anymp3file.mp3`
+Installing a Media Player
+- `sudo apt-get install mpg123`
+- `sudo mpg123 anymp3file.mp3`
 
 You can also access a mixer to control volume and plenty more audio settings using `sudo alsamixer`
 
 ### TSL2591X Light Sensor
 
-- Enabling I2C
-`sudo raspi-config` #going into system configuration -> Interface Options -> i2c -> Yes (to start the driver)
-`sudo reboot` To make sure driver runs on startup
+Enabling I2C
+- `sudo raspi-config` Going into system configuration -> Interface Options -> i2c -> Yes (to start the driver)
+- `sudo reboot` To make sure driver runs on startup
 
 
 #### e-Paper Module : Drivers, Modules, Libraries
 
 #### Python
 
-- Install the function library
-`sudo apt-get install python3-pip`
-`sudo apt-get install python3-pil`
-`sudo apt-get install python3-numpy`
-`sudo pip3 install spidev`
+Install the function library
+- `sudo apt-get install python3-pip`
+- `sudo apt-get install python3-pil`
+- `sudo apt-get install python3-numpy`
+- `sudo pip3 install spidev`
 
 #### C
 
-- Install lg library
+Install lg library
 `wget https://github.com/joan2937/lg/archive/master.zip` Fetching the library
 `unzip master.zip`
 `cd lg-master`
 `make`
 `sudo make install` Similar to opening a "setup.exe" file on windows or "setup.pkg" on macos and linux
 
-- Install gpio library
+Install gpio library
 `cd` Going back to the main directory
 `sudo apt install gpiod libgpiod-dev` Fetching and install the gpio library as dev so we can have full access to the library
 
 - Install BCM2835
 `cd`
  `wget http://www.airspayce.com/mikem/bcm2835/bcm2835-1.71.tar.gz`
- `tar zxvf bcm2835-1.71.tar.gz #opening the tar.gz file`
+ `tar zxvf bcm2835-1.71.tar.gz` Opening the tar.gz file
  `cd bcm2835-1.71/` Going to the directory bcm2835-1.71/
  `sudo ./configure && sudo make && sudo make check && sudo make install` Configuring and making the install on the Pi
 
@@ -182,3 +182,6 @@ You can also access a mixer to control volume and plenty more audio settings usi
 - Run the demo
 
 `sudo ./epd` and the e-Paper module should display a demo
+
+
+WARNING : THIS PROJECT IS NOT COMPLETED I AM STILL WORKING ON IT THAT'S WHY MOST OF THE PROJECT IS NOT HERE YET. I AM PREPARING FOR THE PROJECT. AS A STUDENT I DO NOT HAVE A LOT OF TIME I WORK ON THIS WITH THE TIME I HAVE.
