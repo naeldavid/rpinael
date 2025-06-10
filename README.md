@@ -111,7 +111,7 @@ For this step of the project, I will only display the commands needed to downloa
 `git clone https://github.com/waveshare/WM8960-Audio-HAT`
 
 - Installing the Driver
-`- cd WM8960-Audio-HAT #going to the directory`
+`- cd WM8960-Audio-HAT` going to the directory
 `sudo ./install.sh `
 `sudo reboot`
 
@@ -127,8 +127,8 @@ You can also access a mixer to control volume and plenty more audio settings usi
 ### TSL2591X Light Sensor
 
 - Enabling I2C
-`sudo raspi-config #going into system configuration` -> Interface Options -> i2c -> Yes (to start the driver)
-`sudo reboot #To make sure driver runs on startup`
+`sudo raspi-config` #going into system configuration -> Interface Options -> i2c -> Yes (to start the driver)
+`sudo reboot` To make sure driver runs on startup
 
 
 #### e-Paper Module : Drivers, Modules, Libraries
@@ -144,41 +144,40 @@ You can also access a mixer to control volume and plenty more audio settings usi
 #### C
 
 - Install lg library
-`wget https://github.com/joan2937/lg/archive/master.zip #fetching the library`
+`wget https://github.com/joan2937/lg/archive/master.zip` Fetching the library
 `unzip master.zip`
 `cd lg-master`
 `make`
-`sudo make install #similar to opening a "setup.exe" file on windows or "setup.pkg" on macos and linux`
+`sudo make install` Similar to opening a "setup.exe" file on windows or "setup.pkg" on macos and linux
 
 - Install gpio library
-`cd #going back to the main directory`
-`sudo apt install gpiod libgpiod-dev #fetching and install the gpio library as -dev so we can have full access to the library`
+`cd` Going back to the main directory
+`sudo apt install gpiod libgpiod-dev` Fetching and install the gpio library as dev so we can have full access to the library
 
 - Install BCM2835
 `cd`
  `wget http://www.airspayce.com/mikem/bcm2835/bcm2835-1.71.tar.gz`
  `tar zxvf bcm2835-1.71.tar.gz #opening the tar.gz file`
- `cd bcm2835-1.71/ #going to the directory bcm2835-1.71/`
- `sudo ./configure && sudo make && sudo make check && sudo make install #configuring and making the install on the Pi`
+ `cd bcm2835-1.71/` Going to the directory bcm2835-1.71/
+ `sudo ./configure && sudo make && sudo make check && sudo make install` Configuring and making the install on the Pi
 
 - Install WiringPi
 `cd`
-`sudo apt-get install wiringpi #fetching and installing WiringPi for older Pi systems (before 2019)`
-`#For Raspberry Pi systems after May 2019 (earlier than before, you may not need to execute), you may need to upgrade:`
-`wget https://project-downloads.drogon.net/wiringpi-latest.deb #fetching the library`
-`sudo dpkg -i wiringpi-latest.deb #opening and configuring the wiringpi`
-`gpio -v #checking the version`
-`#Version 2.52 should appear.`
+`sudo apt-get install wiringpi` Fetching and installing WiringPi for older Pi systems (before 2019). For Raspberry Pi systems after May 2019 (earlier than before, you may not need to execute), you may need to upgrade:
+`wget https://project-downloads.drogon.net/wiringpi-latest.deb` Fetching the library
+`sudo dpkg -i wiringpi-latest.deb` Opening and configuring the wiringpi
+`gpio -v` Checking the installation
+ Version 2.52 should appear.
 
 - Download the demo
 `cd`
-`wget https://files.waveshare.com/upload/7/71/E-Paper_code.zip #fetching the demo`
+`wget https://files.waveshare.com/upload/7/71/E-Paper_code.zip` Fetching the demo
 `unzip E-Paper_code.zip -d e-Paper`
 `cd e-Paper/RaspberryPi_JetsonNano/`
-`#Now at e-Paper/RaspberryPi_JetsonNano`
+ Now at e-Paper/RaspberryPi_JetsonNano
 `cd c`
-`sudo make clean #removing files we dont need`
-`sudo make -j4 EPD=epd4in2V2 #making the instalation for the 4.2 inch model`
+`sudo make clean` Removing files we dont need
+`sudo make -j4 EPD=epd4in2V2` Making the instalation for the 4.2 inch model
 
 - Run the demo
 
