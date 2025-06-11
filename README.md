@@ -144,44 +144,43 @@ Install the function library
 #### C
 
 Install lg library
-`wget https://github.com/joan2937/lg/archive/master.zip` Fetching the library
-`unzip master.zip`
-`cd lg-master`
-`make`
-`sudo make install` Similar to opening a "setup.exe" file on windows or "setup.pkg" on macos and linux
+- `wget https://github.com/joan2937/lg/archive/master.zip` Fetching the library
+- `unzip master.zip`
+- `cd lg-master`
+- `make`
+- `sudo make install` Similar to opening a "setup.exe" file on windows or "setup.pkg" on macos and linux
 
 Install gpio library
-`cd` Going back to the main directory
-`sudo apt install gpiod libgpiod-dev` Fetching and install the gpio library as dev so we can have full access to the library
+- `cd` Going back to the main directory
+- `sudo apt install gpiod libgpiod-dev` Fetching and install the gpio library as dev so we can have full access to the library
 
-- Install BCM2835
-`cd`
- `wget http://www.airspayce.com/mikem/bcm2835/bcm2835-1.71.tar.gz`
- `tar zxvf bcm2835-1.71.tar.gz` Opening the tar.gz file
- `cd bcm2835-1.71/` Going to the directory bcm2835-1.71/
- `sudo ./configure && sudo make && sudo make check && sudo make install` Configuring and making the install on the Pi
+Install BCM2835
+- `cd`
+- `wget http://www.airspayce.com/mikem/bcm2835/bcm2835-1.71.tar.gz`
+- `tar zxvf bcm2835-1.71.tar.gz` Opening the tar.gz file
+- `cd bcm2835-1.71/` Going to the directory bcm2835-1.71/
+- `sudo ./configure && sudo make && sudo make check && sudo make install` Configuring and making the install on the Pi
 
-- Install WiringPi
-`cd`
-`sudo apt-get install wiringpi` Fetching and installing WiringPi for older Pi systems (before 2019). For Raspberry Pi systems after May 2019 (earlier than before, you may not need to execute), you may need to upgrade:
-`wget https://project-downloads.drogon.net/wiringpi-latest.deb` Fetching the library
-`sudo dpkg -i wiringpi-latest.deb` Opening and configuring the wiringpi
-`gpio -v` Checking the installation
+Install WiringPi
+- `cd`
+- `sudo apt-get install wiringpi` Fetching and installing WiringPi for older Pi systems (before 2019). For Raspberry Pi systems after May 2019 (earlier than before, you may not need to execute), you may need to upgrade:
+- `wget https://project-downloads.drogon.net/wiringpi-latest.deb` Fetching the library
+- `sudo dpkg -i wiringpi-latest.deb` Opening and configuring the wiringpi
+- `gpio -v` Checking the installation
  Version 2.52 should appear.
 
-- Download the demo
-`cd`
-`wget https://files.waveshare.com/upload/7/71/E-Paper_code.zip` Fetching the demo
-`unzip E-Paper_code.zip -d e-Paper`
-`cd e-Paper/RaspberryPi_JetsonNano/`
+Download the demo
+- `cd`
+- `wget https://files.waveshare.com/upload/7/71/E-Paper_code.zip` Fetching the demo
+- `unzip E-Paper_code.zip -d e-Paper`
+- `cd e-Paper/RaspberryPi_JetsonNano/`
  Now at e-Paper/RaspberryPi_JetsonNano
-`cd c`
-`sudo make clean` Removing files we dont need
-`sudo make -j4 EPD=epd4in2V2` Making the instalation for the 4.2 inch model
+- `cd c`
+- `sudo make clean` Removing files we dont need
+- `sudo make -j4 EPD=epd4in2V2` Making the instalation for the 4.2 inch model
 
-- Run the demo
-
-`sudo ./epd` and the e-Paper module should display a demo
+Run the demo
+- `sudo ./epd` and the e-Paper module should display a demo
 
 
 WARNING : THIS PROJECT IS NOT COMPLETED I AM STILL WORKING ON IT THAT'S WHY MOST OF THE PROJECT IS NOT HERE YET. I AM PREPARING FOR THE PROJECT. AS A STUDENT I DO NOT HAVE A LOT OF TIME I WORK ON THIS WITH THE TIME I HAVE.
