@@ -1,6 +1,6 @@
 # PrayerPi, a simple project using affordable technology and understandable coding to make sure you'll never miss your prayers.
 
-This project consists of using a raspberry pi zero and other modules to make a prayer time clock.
+This project consists of using a raspberry pi zero and other modules to make a prayer time clock with Adhan
 
 What I used for this project : 
 
