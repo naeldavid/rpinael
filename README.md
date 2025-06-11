@@ -8,7 +8,7 @@ What I used for this project :
 - 4.2 inch e-Paper Module
 - WM8960 Audio HAT
 - Small speakers
-- Cables (LOT)
+- Connectors
 - CQRobot Light Sensor (for later)
 
 ---
